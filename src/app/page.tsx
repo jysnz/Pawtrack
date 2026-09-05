@@ -79,9 +79,11 @@ function FoundPetPage() {
       </header>
 
       <section className="grid flex-1 grid-cols-1 gap-6 lg:grid-cols-[1.3fr_1fr]">
-        <div className="min-h-[360px] lg:min-h-0">
-          <FoundPetMap onLocationChange={setLocation} />
-          <p className="mt-2 text-xs text-black/50">
+        <div className="flex h-[360px] flex-col gap-2 lg:h-auto">
+          <div className="min-h-0 flex-1">
+            <FoundPetMap onLocationChange={setLocation} />
+          </div>
+          <p className="text-xs text-black/50">
             Tap anywhere on the map to mark exactly where the pet was found.
           </p>
         </div>
